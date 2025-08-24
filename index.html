@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAY'S FAST FOOD</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-[#1e293b] flex justify-between items-center ps-10 pe-10 h-14 shadow-sm">
+      <div class="brand-name text-[#f8fafc] text-[min(4vw,30px)] ">
+        RAY'S FAST FOOD
+      </div>
+      <ul class="flex space-x-6 max-md:hidden text-[#f8fafc]">
+        <li><a href="#" class="hover:text-gray-500">Home</a></li>
+        <li><a href="#" class="hover:text-gray-500">About</a></li>
+        <li><a href="#" class="hover:text-gray-500">Services</a></li>
+        <li><a href="#" class="hover:text-gray-500">Contact</a></li>
+      </ul>
+      <!-- Hamburger button -->
+       <button id="ham-btn" class="text-3xl md:hidden cursor-pointer text-[#f8fafc]">&#9776</button>
+    </nav>
+<!-- Menu -->
+ <div id="menu" class="links text-center bg-[#1e293b] inset-0 fixed top-0 hidden">
+    <!-- Close button -->
+    <button id="close-btn" class="close-btn text-4xl absolute top-2 right-9 cursor-pointer text-[#f8fafc]">&times</button>
+     <ul class="block space-y-10 mt-20 text-[#f8fafc] ">
+        <li><a href="#" class="hover:text-gray-500">Home</a></li>
+        <li><a href="#" class="hover:text-gray-500">About</a></li>
+        <li><a href="#" class="hover:text-gray-500">Services</a></li>
+        <li><a href="#" class="hover:text-gray-500">Contact</a></li>
+      </ul>
+ </div>
+<!-- Main Page -->
+ <main class=" container mx-auto mt-20 p-4">
+<section class="first-section grid sm:grid-cols-1 lg:grid-cols-2 mx-auto">
+   <div class="typography">
+     <p class="text-[clamp(25px,6vw,50px)] max-md:text-center ">Welcome To Our Tasty <span class="text-orange-500 hover:underline cursor-pointer">Foods</span></p>
+    <p class="mt-4 max-md:text-center text-[clamp(16px,4vw,20px)]">Try some of our delicious foods from the best chefs all around the world.
+Feel free to put your suggestions
+in the box for us to review and do the necessary stuff.</p>
+
+
+<div class="btns mt-4 space-x-6 max-md:text-center ">
+<button class="bg-blue-500 hover:bg-blue-600 rounded-2xl text-white p-2 cursor-pointer text-sm transition">Order Now</button>
+<button class="bg-orange-500 hover:bg-orange-600 rounded-2xl  p-2 cursor-pointer text-sm transition text-white">Book a Table</button>
+</div>
+   </div>
+<!-- MY Image goes here -->
+<img src="bb.jpg" alt="" class="w-150 h-auto mx-auto">
+</section>
+ </main>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
