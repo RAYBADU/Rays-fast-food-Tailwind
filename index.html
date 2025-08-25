@@ -46,7 +46,7 @@ in the box for us to review and do the necessary stuff.</p>
 
 <div class="btns mt-4 space-x-6 max-md:text-center ">
 <button class="bg-yellow-500 hover:bg-yellow-600 rounded-2xl text-white p-2 cursor-pointer text-sm transition" id="order-btn">Order Now</button>
-<button class="bg-orange-500 hover:bg-orange-600 rounded-2xl  p-2 cursor-pointer text-sm transition text-white">Book a Table</button>
+<button class="bg-orange-500 hover:bg-orange-600 rounded-2xl  p-2 cursor-pointer text-sm transition text-white" id="book-btn">Book a Table</button>
 </div>
    </div>
 <!-- MY Image goes here -->
@@ -171,13 +171,42 @@ Hungry? Don’t wait! Order your favorite meals online and get them delivered ho
          <label for="Food"> Food :</label>
         <input type="text" id="Food" name="Food" required placeholder="Hamburger, Pasta etc..."> <br>
 
-        <button type="submit" class="bg-[#fc350b] text-white rounded-xl p-1 mt-5 hover:bg-orange-700 cursor-pointer">Submit</button>
+        <button type="submit" class="bg-[#fc350b] text-white rounded-xl p-1 mt-5 hover:bg-orange-700 cursor-pointer" id="submit-btn">Submit</button>
 </form>
-
-
-
 </div>
  </div>   <!-- End of modal -->
+
+ <!-- Modal for book a table -->
+<div class="modal2 flex justify-center mt-5 container mx-auto  hidden  " id="modal2">
+<div class="card  w-auto h-auto shadow-md absolute top-80 bg-[#3f403b] text-white border-black text-center rounded-xl pb-2 pe-3 ps-3">
+<p class="text-center pt-2 font-bold">BOOK A TABLE</p>
+  <p>How many tables would you like to book</p>
+
+<select name="" id="" class="cursor-pointer">
+  <option value="option1" class="text-black">1</option>
+   <option value="option1" class="text-black">2</option>
+  <option value="option1" class="text-black">3</option>
+  <option value="option1" class="text-black">4</option>
+   <option value="option1" class="text-black">5</option>
+  <option value="option1" class="text-black">6</option>
+
+
+</select> <br>
+
+<button class=" mt-5 bg-white rounded-2xl text-black p-2 hover:opacity-[0.9] cursor-pointer" id="book-btn-now">
+  Book Now
+</button>
+
+
+  
+  </div>
+    </div>
+
+
+
+
+
+
     <script src="app.js"></script>
   </body>
 </html>
